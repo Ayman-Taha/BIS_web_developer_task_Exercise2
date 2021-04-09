@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!--
+	Exercise 2: reaching the output using only plain JavaScript
+    output link: https://drive.google.com/file/d/1qttpv3DgwdFNltLLQm7IB4fbpuDinRdx/view
+-->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exercise 2</title>
+		<link rel="stylesheet" href="Exercise2.css" />
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<h1>The JavaScript Lottery</h1>
+
+			<h2>Click the button to draw a number.</h2>
+
+			<button class="play-btn">Let's Play!</button>
+
+			<p>Your number: <span class="draw">0</span></p>
+
+			<p>Any number in the 1 to 1000 range wins!</p>
+
+			<!-- Customized alert window -->
+			<div class="modal hidden">
+				<button class="x-button">&times;</button>
+				<h2>This site says...</h2>
+				<p class="result"></p>
+				<button class="ok-button">OK</button>
+			</div>
+
+			<!-- Overlay blur-->
+			<div class="overlay hidden"></div>
+		</div>
+
+		<script src="Exercise2.js"></script>
+	</body>
+</html>

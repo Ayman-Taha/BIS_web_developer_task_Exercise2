@@ -1,0 +1,123 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border-radius: 0;
+	outline: none;
+}
+
+body {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	background-color: #222;
+	justify-content: space-around;
+}
+
+.wrapper {
+	width: 50%;
+	height: 85%;
+	background-color: #fff;
+	padding: 15px;
+	margin: auto;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	text-align: center;
+	font-family: "fantasy Impact", "Arial Narrow Bold", sans-serif;
+}
+
+h1,
+h2,
+button,
+p {
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 35px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+/*Styling play button*/
+
+.play-btn {
+	height: 15%;
+	width: 25%;
+	font-size: 20px;
+	text-decoration: none;
+	border: 2px solid #808080;
+	background-color: #dcdcdc;
+}
+
+.play-btn:hover {
+	background-color: #0ff;
+	border-color: #2593be;
+}
+
+p {
+	font-weight: bold;
+	font-size: 25px;
+}
+
+p:first {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+/*Styling customized alert window */
+.hidden {
+	display: none;
+}
+
+.modal {
+	position: absolute;
+	background-color: #fffaf0;
+	border: 2px solid #0ff;
+	top: 40%;
+	width: 40%;
+	height: 30%;
+	z-index: 10;
+	text-align: left;
+	padding: 10px;
+}
+
+/*Styling overlay blur*/
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(3px);
+	z-index: 5;
+}
+
+/*Styling x quit button*/
+.x-button {
+	position: relative;
+	left: 95%;
+	font-size: 30px;
+	border: none;
+	background: none;
+}
+
+/*Styling ok button*/
+.ok-button {
+	background-color: #dcdcdc;
+	width: 50%;
+	height: 20%;
+	position: absolute;
+	left: 45%;
+	top: 65%;
+	border: 4px solid #dcdcdc;
+}
+
+.result {
+	font-size: 20px;
+	font-weight: normal;
+}
